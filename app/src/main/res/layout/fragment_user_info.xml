@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/title_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorMain">
+
+        <com.example.wechattest.RoundImageView
+            android:id="@+id/photo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/photo"
+            android:layout_centerInParent="true">
+
+        </com.example.wechattest.RoundImageView>
+
+        <TextView
+            android:id="@+id/user_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="haizi"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/photo"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:textColor="#D5D6D8"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="#F4F4F4">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="154dp"
+            android:stretchColumns="1"
+            android:background="#fff"
+            android:layout_marginTop="20dp">
+
+            <TableRow>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#F2F2F2"
+                    android:layout_span="3"/>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/reset_password">
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/setting_yellow"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="10dp"
+                    />
+
+                <TextView
+                    android:layout_height="50dp"
+                    android:text="密码设置"
+                    android:textSize="20sp"
+                    android:gravity="center_vertical"
+                    android:background="#fff"
+                    />
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/more"
+                    android:paddingTop="10dp"
+                    android:paddingRight="20dp"
+                    />
+            </TableRow>
+
+            <TableRow
+                android:background="#fff">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#F2F2F2"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_span="2"
+                    />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/server">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/server_blue"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="15dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="客服中心"
+                    android:textSize="20sp"
+                    android:gravity="center_vertical"
+                    android:background="#fff"
+                    />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/more"
+                    android:paddingTop="10dp"
+                    android:paddingRight="20dp"
+                    />
+            </TableRow>
+
+            <TableRow
+                android:background="#fff">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#F2F2F2"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_span="2"
+                    />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/version">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/version_green"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="15dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="版本"
+                    android:textSize="20sp"
+                    android:gravity="center_vertical"
+                    android:background="#fff"
+                    />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/more"
+                    android:paddingTop="10dp"
+                    android:paddingRight="20dp"
+                    />
+            </TableRow>
+
+            <TableRow>
+                <View
+                    android:layout_height="1dp"
+                    android:background="#F5F5F5"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_span="2"
+                    />
+
+            </TableRow>
+        </TableLayout>
+
+        <Button
+            android:id="@+id/quit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F88080"
+            android:text="退出登录"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:layout_margin="40dp"
+            />
+
+    </LinearLayout>
+</LinearLayout>

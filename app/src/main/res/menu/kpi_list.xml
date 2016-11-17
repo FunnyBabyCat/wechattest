@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="14sp">
+    <item
+        android:id="@+id/jingyingkaohefenxi"
+        android:title="经营考核分析"/>
+
+    <item
+        android:id="@+id/shourufenxi"
+        android:title="收入分析"/>
+
+    <item
+        android:id="@+id/feiyongfenxi"
+        android:title="费用分析"/>
+
+    <item
+        android:id="@+id/lirunfenxi"
+        android:title="利润分析"/>
+
+    <item
+        android:id="@+id/guimofenxi"
+        android:title="规模分析"/>
+
+    <item
+        android:id="@+id/zhengtiyunyingqingkuang"
+        android:title="整体运营情况"/>
+
+</menu>

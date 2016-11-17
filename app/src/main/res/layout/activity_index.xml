@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 上边主页面 -->
+
+    <fragment
+        android:id="@+id/fragment_kpi"
+        android:name="com.example.wechattest.FragmentKpi"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:layout="@layout/fragment_kpi" />
+
+    <fragment
+        android:id="@+id/fragment_select"
+        android:name="com.example.wechattest.FragmentSelect"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:layout="@layout/fragment_select" />
+
+    <fragment
+        android:id="@+id/fragment_qna"
+        android:name="com.example.wechattest.FragmentQna"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:layout="@layout/fragment_qna" />
+
+    <fragment
+        android:id="@+id/fragment_user_info"
+        android:name="com.example.wechattest.FragmentUserInfo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:layout="@layout/fragment_user_info" />
+
+    <!-- 底部菜单页面 -->
+
+    <RadioGroup
+        android:id="@+id/bottomRg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="4dp">
+
+        <RadioButton
+            android:id="@+id/rbOne"
+            style="@style/my_radiogroup_style"
+            android:checked="true"
+            android:drawableTop="@drawable/selected_ic_kpi"
+            android:text="经营分析" />
+
+        <RadioButton
+            android:id="@+id/rbTwo"
+            style="@style/my_radiogroup_style"
+            android:drawableTop="@drawable/selected_id_select"
+            android:text="自选指标" />
+
+        <RadioButton
+            android:id="@+id/rbThree"
+            style="@style/my_radiogroup_style"
+            android:drawableTop="@drawable/selected_ic_qna"
+            android:text="智能问答" />
+
+        <RadioButton
+            android:id="@+id/rbFour"
+            style="@style/my_radiogroup_style"
+            android:drawableTop="@drawable/selected_ic_user_info"
+            android:text="个人中心"/>
+
+    </RadioGroup>
+
+</LinearLayout>
